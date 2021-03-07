@@ -34,7 +34,7 @@ public class Alarma {
 		if (pr) {
 			String id = pedir_identificacion();
 			for (int i = 0; i > autorizados.length; i++) {
-				if (id == autorizados[i]) {
+				if (id.equals(autorizados[i])) {
 					return "OK";
 				}
 			}
