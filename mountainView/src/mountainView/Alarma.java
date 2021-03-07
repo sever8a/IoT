@@ -33,8 +33,8 @@ public class Alarma {
 	public String intruso(boolean p, boolean pr) {
 		if (pr) {
 			String id = pedir_identificacion();
-			for (int i = 0; i > autorizados.length; i++) {
-				if (id == autorizados[i]) {
+			for (int i = 0; i < autorizados.length; i++) {
+				if (id.equals(autorizados[i])) {
 					return "OK";
 				}
 			}
